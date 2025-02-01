@@ -5,24 +5,25 @@ import DropDown from "./DropDown";
 import { IoNotifications } from "react-icons/io5";
 import { TiShoppingCart } from "react-icons/ti";
 import { IoMdArrowDropup } from "react-icons/io";
-import Logo from '../../assets/images/logo_png_3.png'
+import Logo from '../../assets/images/logo_png_4.png'
+import { CiSearch } from "react-icons/ci";
 
 const Header = () => {
   const [showDropDown, setShowDropDown] = useState(false);
 
   return (
-    <div className="w-full h-20 fixed py-2 top-0 shadow-md bg-white px-6 z-50 flex items-center justify-between">
-      {/* Logo Section */}
-      {/* <div className="flex items-center h-full"> */}
-        <img src={Logo} alt="KOB'S Collection" className="h-56 w-auto object-contain" />
-      {/* </div> */}
+    <div className="w-full h-[70px] fixed py-2 top-0 shadow-md bg-white px-6 z-50 flex items-center justify-between">
+
+      {/* Logo */}
+        <img src={Logo} alt="KOB'S Collection" className="h-24 w-auto object-contain" />
 
       {/* Search Bar */}
-      <div className="w-1/2 max-w-md">
+      <div className="w-1/2 relative max-w-md gap-2 items-center flex">
+        <CiSearch className="absolute left-1 text-gray-800 font-bold" fontSize="24"/>
         <input
           type="text"
           placeholder="Search for products..."
-          className="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-green-500 shadow-sm"
+          className="w-full px-8 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-green-500 shadow-sm"
         />
       </div>
 
