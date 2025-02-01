@@ -30,7 +30,7 @@ const Header = () => {
       {/* Icons Section */}
       <div className="flex items-center gap-4">
         {/* Shopping cart icon */}
-        <button className="relative p-2 hover:bg-primary rounded-full transition-colors duration-300">
+        <button className="relative p-2 hover:bg-secondary rounded-full transition-colors duration-300">
           <TiShoppingCart className="text-primary w-6 h-6" />
           <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs w-4 h-4 flex items-center justify-center rounded-full">
             3
