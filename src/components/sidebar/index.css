@@ -13,8 +13,22 @@
     font-weight: bold;
     font-size: large;
     padding: 5px;
+    margin-top: 30px;
 }
 
 .sidebar-wrapper {
+    display: block;
+    position: relative;
+}
+
+.collection {
+    margin-top: 30px;
     display: flex;
+    gap: 20px;
+}
+
+.collection-title {
+    font-weight: bold;
+    font-size: medium;
+    padding: 5px;
 }
