@@ -1,19 +1,15 @@
 import React from "react";
 import './index.css';
+import { FaShirt } from "react-icons/fa6";
 
 const Sidebar = () => {
   return (
     <div className="sidebar-container">
-      <div className="flex flex-col items-center justify-center h-full">
+      <div className="sidebar-wrapper">
         <h1 className="title">KOBS Collection</h1>
+        <FaShirt className=""/>
       </div>
-
-      <div className="flex flex-col items-center justify-between h-full">
-        <div className="flex">
-
-        </div>
       </div>
-    </div>
   );
 };
 
